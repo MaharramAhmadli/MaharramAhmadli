@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader{
+    background-color: chocolate;
+    color: darkblue;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation: timing function 5s;
+    animation-fill-mode: forwards;
+}
+
+div:hover{
+    background-color: rgb(46, 59, 4);
+    animation-play-state: running;
+    transform: rotate(0deg);
+}
+i{
+    font-size:50px
+}
+
+.animate{
+    width: 100px;
+    height: 250px;
+    position: relative;
+    font-size: 50px;
+    background-color: aqua;
+    animation-duration: 20s infinite;
+}
+
+@keyframes animate{
+        from{
+         transform: rotate(180deg) translateX(-10px);
+        }
+        to{
+            transform: rotate(360deg) translateX(300px)
+        }
+}
